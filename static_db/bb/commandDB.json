@@ -1,10 +1,10 @@
 {
     "0": {
-        "name": "startFunction",
+        "name": "state",
         "format": "32s"
     },
     "1": {
-        "name": "endFunction",
+        "name": "end-state",
         "format": ""
     },
     "2": {
@@ -12,7 +12,7 @@
         "format": "32si"
     },
     "3": {
-        "name": "loopRest",
+        "name": "loop-rest",
         "format": ""
     },
     "4": {
@@ -21,7 +21,7 @@
         "startBlock":true
     },
     "5": {
-        "name": "endIf",
+        "name": "end-if",
         "format": "",
         "endBlock":true
     },
@@ -30,24 +30,24 @@
         "format": "i"
     },
     "7": {
-        "name": "gotoLabel",
+        "name": "goto",
         "format": "i"
     },
     "8": {
-        "name": "startSubroutine",
+        "name": "procedure",
         "format": "32s"
     },
     "9": {
-        "name": "endSubroutine",
+        "name": "end-procedure",
         "format": ""
     },
     "10": {
-        "name":"callSubroutine",
+        "name":"call",
         "format": "32s"
     },
     "11": {
         "format": "i",
-        "name": "sendToLabel"
+        "name": "send-to"
     },
     "12": {
         "format":""
@@ -64,7 +64,7 @@
         "format": "i"
     },
     "16": {
-        "name":"endUpon",
+        "name":"end-upon",
         "format": ""
     },
     "17": {
@@ -83,6 +83,7 @@
         "size": 16
     },
     "21": {
+        "name": "transfer-to",
         "format": "32s"
     },
     "22": {
@@ -106,13 +107,13 @@
         "format": "i32s"
     },
     "29": {
-        "name": "sendToLabelUpon",
+        "name": "send-to-upon",
         "format": "ii"
     },
     "30": {
         "format": "ii",
         "size": 12,
-        "name":"loopRelated"
+        "name":"loop-related"
     },
     "31": {
         "format": "ii",
@@ -142,7 +143,7 @@
         "format": "iiiii"
     },
     "41": {
-        "name": "StoreValue",
+        "name": "set!",
         "format": "iiii"
     },
     "42": {
@@ -172,7 +173,7 @@
     "49": {
         "size": 24,
         "format": "iiiii",
-        "name":"ModifyVar?"
+        "name":"op-set!"
     },
     "50": {
         "format": "i",
@@ -191,12 +192,12 @@
         "size": 8
     },
     "54": {
-        "name":"ifNot",
+        "name":"if-not",
         "format": "ii",
         "size": 12
     },
     "55": {
-        "name":"endIfNot",
+        "name":"end-if-not",
         "format":""
     },
     "56": {
@@ -204,7 +205,7 @@
         "format":""
     },
     "57": {
-        "name":"endElse ",
+        "name":"end-else",
         "format":""
     },
     "58": {
@@ -2536,12 +2537,12 @@
         "format":""
     },
     "14001": {
-        "name": "Move_Register",
+        "name": "register-state",
         "format": "32si",
         "hex":true
     },
     "14002": {
-        "name": "Move_EndRegister",
+        "name": "end-register-state",
         "format":""
     },
     "14003": {
